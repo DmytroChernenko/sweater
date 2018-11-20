@@ -22,7 +22,12 @@
             </#if>
         </ul>
 
-        <div class="navbar-text mr-3">${name}</div>
-        <@l.logout />
+        <#if known>
+            <div class="navbar-text mr-3">${name}</div>
+
+            <@l.logout />
+        </#if>
+
+
     </div>
 </nav>
